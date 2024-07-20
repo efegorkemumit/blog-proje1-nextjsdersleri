@@ -11,6 +11,9 @@ const config: Config = {
       container: {
         padding: '2rem',
       },
+      fontSize:{
+        '7xl': '13.052rem',
+      },
       colors:{
         mycolor:"#FC4100",
         mycolor2:"#FFC55A",
