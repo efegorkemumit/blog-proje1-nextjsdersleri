@@ -8,9 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      container: {
+        padding: '2rem',
+      },
       colors:{
-        myprimary:"#EF5A6F",
-        mysecond:"#FFF1DB",
+        mycolor:"#FC4100",
+        mycolor2:"#FFC55A",
+        mycolor3:"#00215E",
+        mycolor4:"#2C4E80",
+
 
       },
       backgroundImage: {
