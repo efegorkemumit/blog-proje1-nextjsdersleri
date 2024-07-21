@@ -1,5 +1,8 @@
+'use client'
+
 import { Pacifico } from "next/font/google";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { AiFillAlert, AiFillAlipayCircle, AiFillAmazonCircle, AiFillBehanceCircle } from "react-icons/ai";
 
 //const inter = Inter({ subsets: ["latin"] });
@@ -8,8 +11,34 @@ const pacifiko = Pacifico({ subsets: ["cyrillic"], weight: "400" });
 
 
 export default function Home() {
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [darkMode]);
+
+
   return (
     <>
+
+<div className="items-center text-center bg-white dark:bg-black 
+
+">
+  <a href="" className="font-semibold text-sm text-black hover:text-red-700
+  dark:text-white dark:hover:text-red-300
+  ">
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quod, eum atque officiis tempore animi?
+  </a>
+
+        
+</div>
+
       <header className="bg-mycolor3 p-4 ">
         <div className="container mx-auto flex flex-row justify-between items-center ">
           <div className="text-white text-lg md:text-xl  font-semibold">
@@ -21,12 +50,20 @@ export default function Home() {
           </div>
 
 
-          <div className="text-white text-lg font-semibold">
+          <div className="text-white flex text-lg font-semibold gap-4">
+            <div>
             login
+            </div>
+            
+            <button onClick={()=>setDarkMode(!darkMode)}>
+              dark
+            </button>
           </div>
 
         </div>
       </header>
+
+  
 
       <div className="flex items-center p-3 space-x-8  justify-center bg-mycolor4 border-b-2 border-b-red-600  shadow-2xl">
         <a href="" className="text-white hover:text-black">Anasayfa</a>
@@ -53,7 +90,7 @@ export default function Home() {
          
          <div className="relative">
          <AiFillAlipayCircle className="text-6xl z-10" />
-            <div className="z-50 absolute right-1 -top-2 dark:bg-white bg-red-700 rounded-full px-2 text-white"> 2</div>
+            <div className="z-50 absolute right-1 -top-2  bg-red-700 rounded-full px-2 text-white"> 2</div>
             <h2>Home1</h2>
 
          </div>
