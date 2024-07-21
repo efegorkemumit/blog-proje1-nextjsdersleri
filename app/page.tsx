@@ -34,6 +34,16 @@ export default function Home() {
 
 
       </div>
+
+      <div className="flex items-center">
+        <img src="/5.jpg"
+         className="h-44 md:h-96 lg:h-[500px]  w-full object-cover
+        blur-sm hover:blur-none   opacity-70 hover:opacity-90 transition duration-1000
+         "
+        />
+
+
+      </div>
     </>
   );
 }
