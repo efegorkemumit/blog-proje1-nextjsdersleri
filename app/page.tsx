@@ -1,5 +1,6 @@
 import { Pacifico } from "next/font/google";
 import Image from "next/image";
+import { AiFillAlert, AiFillAlipayCircle, AiFillAmazonCircle, AiFillBehanceCircle } from "react-icons/ai";
 
 //const inter = Inter({ subsets: ["latin"] });
 
@@ -37,13 +38,45 @@ export default function Home() {
 
       <div className="flex items-center">
         <img src="/5.jpg"
-         className="h-44 md:h-96 lg:h-[500px]  w-full object-cover
-        blur-sm hover:blur-none   opacity-70 hover:opacity-90 transition duration-1000
+          className="h-44 md:h-96 lg:h-[500px]  w-full object-cover
+          opacity-70 hover:opacity-90 transition duration-1000
          "
         />
 
 
       </div>
+
+      <div className="container mt-4 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+          <div className="lg:col-span-3 border-2 items-center justify-center flex flex-col p-4">
+            <AiFillAlipayCircle className="text-6xl" />
+            <h2>Home1</h2>
+          </div>
+
+          <div className="border-2 items-center justify-center flex flex-col p-4">
+            <AiFillAlert  className="text-6xl" />
+            <h2>Home2</h2>
+          </div>
+
+
+          <div className="border-2 items-center justify-center flex flex-col p-4">
+            <AiFillAmazonCircle  className="text-6xl" />
+            <h2>Home3</h2>
+          </div>
+
+          <div className="border-2 items-center justify-center flex flex-col p-4">
+            <AiFillBehanceCircle   className="text-6xl" />
+            <h2>Home4</h2>
+          </div>
+
+        
+
+
+
+        </div>
+      </div>
+      
     </>
   );
 }
