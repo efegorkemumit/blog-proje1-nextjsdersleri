@@ -49,9 +49,16 @@ export default function Home() {
       <div className="container mt-4 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
-          <div className="lg:col-span-3 border-2 items-center justify-center flex flex-col p-4">
-            <AiFillAlipayCircle className="text-6xl" />
+          <div className=" lg:col-span-3 border-2 items-center justify-center flex flex-col p-4">
+         
+         <div className="relative">
+         <AiFillAlipayCircle className="text-6xl z-10" />
+            <div className="z-50 absolute right-1 -top-2 dark:bg-white bg-red-700 rounded-full px-2 text-white"> 2</div>
             <h2>Home1</h2>
+
+         </div>
+         
+            
           </div>
 
           <div className="border-2 items-center justify-center flex flex-col p-4">
@@ -76,7 +83,7 @@ export default function Home() {
 
         </div>
       </div>
-      
+
     </>
   );
 }
