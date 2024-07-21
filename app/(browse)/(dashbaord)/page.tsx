@@ -1,8 +1,9 @@
-
+'use client'
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import { Pacifico } from "next/font/google";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AiFillAlert, AiFillAlipayCircle, AiFillAmazonCircle, AiFillBehanceCircle } from "react-icons/ai";
 
@@ -13,6 +14,7 @@ const pacifiko = Pacifico({ subsets: ["cyrillic"], weight: "400" });
 
 export default function Home() {
 
+  const router = useRouter()
 
 
 
@@ -20,7 +22,9 @@ export default function Home() {
     <>
       <Hero />
 
-
+      <button type="button"  className="bg-red-700 p-4 text-white" onClick={() => router.push('/blog')}>
+      Blog
+    </button>
       <div className="container mt-4 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
