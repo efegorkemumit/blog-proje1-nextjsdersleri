@@ -35,3 +35,7 @@
 - 00:00 Liste
 - 00:22 Blog Detail
 
+##  NextJs 5. Gün | Shadcn ve NextUI İnceleme | NextUI Kurulum ve Componentlerin Kullanımı | NextJs Tutorial
+
+- 00:00 Liste
+- 00:22 Shadcn ve NextUI İnceleme
