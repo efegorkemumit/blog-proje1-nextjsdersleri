@@ -25,4 +25,13 @@
 - 00:22 Componentler Url ve Link Page Layout Route Group
 - 19:35 DynmaicRoutes , Middleware Error Loading  Page Linking
 
+##  Nextjs Eğitimi 3 Gün | Blog List Component Interface Optimizasyonu | NextJs Tutorial
+
+- 00:00 Liste
+- 00:22 Blog List Component Interface Optimizasyonu
+
+##  Nextjs Eğitimi 4 Gün | Blog Detail Page | NextJs Tutorial
+
+- 00:00 Liste
+- 00:22 Blog Detail
 
